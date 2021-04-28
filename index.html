@@ -3,7 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Curiosity Week Guessing Game</title>
+   <title>Number Guessing Game</title>
+   <link rel="icon" href="SiteIcon.png">
    <script src="./script.js" async defer></script>
    <link rel="stylesheet" href="style.css">
 </head>
@@ -19,12 +20,12 @@
    <h1>JS Guessing Game</h1>
 
    <!-- a paragraph tag, feel free to customize -->
-   <p>Welcome to Curiosity Week! Let's play a game. 
+   <p>Welcome to Curiosity Week! Let's play a game.
       Please guess the number between 0 and 100</p>
 
    <!-- a text input and button wrapped in a form -->
    <form id="game-form">
-      <!-- html5 number input, with form validation to 
+      <!-- html5 number input, with form validation to
          enforce min, max, and autocomplete turned off -->
       <input id="guess-input" type="number" min="0" max="100" autocomplete="off" />
 
@@ -43,7 +44,7 @@
    <ol id="guess-history">
       <!-- this paragraph tag isn't technically allowed, but its nice to show
          a message before the game starts, that will later be cleared, without
-         having to use an <li> element and thus showing the auto-generated 
+         having to use an <li> element and thus showing the auto-generated
          bullet or number -->
       <p>No Guesses Yet</p>
    </ol>
