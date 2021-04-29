@@ -1,0 +1,51 @@
+<html lang="en"><head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Number Guessing Game</title>
+   <link rel="icon" href="SiteIcon.PNG">
+   <script src="./script.js" async="" defer=""></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<!--
+   Welcome! The HTML in the <body> tag is what shows up on the page. Everything
+   in the <head> is special and meant for behind-the-scenes configuration, like
+   linking in our CSS and JavaScript code. Every HTML element that we intend to
+   touch in JavaScript will be given a unique ID that we can reference with
+   the call to document.getElementById
+-->
+<body id="game-body">
+   <!-- h1 is the highest priority header, only one per page! -->
+   <h1>JS Guessing Game</h1>
+
+   <!-- a paragraph tag, feel free to customize -->
+   <p>Welcome to Curiosity Week! Let's play a game.
+      Please guess the number between 0 and 100</p>
+
+   <!-- a text input and button wrapped in a form -->
+   <form id="game-form">
+      <!-- html5 number input, with form validation to
+         enforce min, max, and autocomplete turned off -->
+      <input id="guess-input" type="number" min="0" max="100" autocomplete="off">
+
+      <!-- a "submit" button which triggers a "submit" event on the form that
+         we can intercept in javascript to run our game logic -->
+      <button id="guess-button" type="submit">Submit Guess</button>
+   </form>
+
+   <!-- h2 is a sub-heading, can have many in document (down to h3, h4, h5, h6) -->
+   <h2>Your Current Guess is:</h2>
+   <!-- a place to record the most recent guess -->
+   <p id="result">No current guess.</p>
+
+   <!-- an olrdered list (lo) of all previous guesses, managed in javascript -->
+   <h2>Previous Guesses:</h2>
+   <ol id="guess-history">
+      <!-- this paragraph tag isn't technically allowed, but its nice to show
+         a message before the game starts, that will later be cleared, without
+         having to use an <li> element and thus showing the auto-generated
+         bullet or number -->
+      <p>No Guesses Yet</p>
+   </ol>
+
+
+</body></html>
